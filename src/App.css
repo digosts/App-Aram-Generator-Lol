@@ -45,6 +45,10 @@ textarea {
   filter: brightness(0.9);
   cursor: pointer;
 }
+.app .buttons button:disabled {
+  opacity: 0.85;
+  cursor: no-drop;
+}
 
 .app .box-times {
   padding: 50px 0;

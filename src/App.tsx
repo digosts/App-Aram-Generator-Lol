@@ -53,6 +53,7 @@ function App() {
 
     setChampionsLeft(arrayLeft);
     setChampionsRight(arrayRight);
+    setBtnGerar(false);
   }
 
   function gerarOther() {
@@ -89,6 +90,7 @@ function App() {
 
     setChampionsLeftOthers(arrayLeftOthers);
     setChampionsRightOthers(arrayRightOthers);
+    setBtnGerarOthers(false);
   }
 
   function zerar() {
@@ -96,6 +98,8 @@ function App() {
     setChampionsLeftOthers([]);
     setChampionsRight([]);
     setChampionsRightOthers([]);
+    setBtnGerar(true);
+    setBtnGerarOthers(true);
   }
 
   return (
@@ -105,9 +109,7 @@ function App() {
       <hr />
 
       <div className="buttons">
-        <button onClick={zerar} disabled={!btnGerar}>
-          Reiniciar
-        </button>
+        <button onClick={zerar}>Reiniciar</button>
         <button onClick={gerarSorteio} disabled={!btnGerar}>
           Gerar Times
         </button>
