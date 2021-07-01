@@ -31,20 +31,22 @@ function App() {
     const arrayRight = [];
 
     for (let index = 0; index <= 4; index++) {
-      let num = Math.round(Math.random() * (155 - 0) + 0);
+      let num = getRandom();
+
+      console.log();
 
       while (arrayLeft.indexOf(num) > -1) {
-        num = Math.round(Math.random() * (155 - 0) + 0);
+        num = getRandom();
       }
 
       arrayLeft.push(num);
     }
 
     for (let index = 0; index <= 4; index++) {
-      let num = Math.round(Math.random() * (155 - 0) + 0);
+      let num = getRandom();
 
       while (arrayRight.indexOf(num) > -1 || arrayLeft.indexOf(num) > -1) {
-        num = Math.round(Math.random() * (155 - 0) + 0);
+        num = getRandom();
       }
 
       arrayRight.push(num);
@@ -60,21 +62,21 @@ function App() {
     const arrayRightOthers = [];
 
     for (let index = 0; index <= 4; index++) {
-      let num = Math.round(Math.random() * (155 - 0) + 0);
+      let num = getRandom();
 
       while (
         championsLeft.indexOf(num) > -1 ||
         championsRight.indexOf(num) > -1 ||
         arrayLeftOthers.indexOf(num) > -1
       ) {
-        num = Math.round(Math.random() * (155 - 0) + 0);
+        num = getRandom();
       }
 
       arrayLeftOthers.push(num);
     }
 
     for (let index = 0; index <= 4; index++) {
-      let num = Math.round(Math.random() * (155 - 0) + 0);
+      let num = getRandom();
 
       while (
         championsLeft.indexOf(num) > -1 ||
@@ -82,7 +84,7 @@ function App() {
         arrayLeftOthers.indexOf(num) > -1 ||
         arrayRightOthers.indexOf(num) > -1
       ) {
-        num = Math.round(Math.random() * (155 - 0) + 0);
+        num = getRandom();
       }
 
       arrayRightOthers.push(num);
@@ -100,6 +102,10 @@ function App() {
     setChampionsRightOthers([]);
     setBtnGerar(true);
     setBtnGerarOthers(true);
+  }
+
+  function getRandom() {
+    return Math.floor(Math.random() * 155 + 1);
   }
 
   return (
