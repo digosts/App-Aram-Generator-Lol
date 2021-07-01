@@ -123,7 +123,7 @@ function App() {
             return (
               <div className="champion">
                 <img
-                  src={`http://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/${champions[item][1].image.full}`}
+                  src={`https://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/${champions[item][1].image.full}`}
                 />
                 <span>{champions[item][1].name}</span>
               </div>
@@ -135,7 +135,7 @@ function App() {
             return (
               <div className="champion">
                 <img
-                  src={`http://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/${champions[item][1].image.full}`}
+                  src={`https://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/${champions[item][1].image.full}`}
                 />
                 <span>{champions[item][1].name}</span>
               </div>
@@ -149,7 +149,7 @@ function App() {
             return (
               <div className="champion">
                 <img
-                  src={`http://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/${champions[item][1].image.full}`}
+                  src={`https://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/${champions[item][1].image.full}`}
                 />
               </div>
             );
@@ -160,7 +160,7 @@ function App() {
             return (
               <div className="champion">
                 <img
-                  src={`http://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/${champions[item][1].image.full}`}
+                  src={`https://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/${champions[item][1].image.full}`}
                 />
               </div>
             );
