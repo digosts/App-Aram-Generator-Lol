@@ -22,7 +22,6 @@ function App() {
 
         let result = Object.keys(data).map((key) => [Number(key), data[key]]);
 
-        console.log(result.length);
         setChampions(result);
       });
   }, []);
@@ -44,7 +43,7 @@ function App() {
     for (let index = 0; index <= 4; index++) {
       let num = Math.round(Math.random() * (155 - 0) + 0);
 
-      while (arrayRight.indexOf(num) > -1) {
+      while (arrayRight.indexOf(num) > -1 || arrayLeft.indexOf(num) > -1) {
         num = Math.round(Math.random() * (155 - 0) + 0);
       }
 
@@ -64,9 +63,9 @@ function App() {
       let num = Math.round(Math.random() * (155 - 0) + 0);
 
       while (
-        arrayLeftOthers.indexOf(num) > -1 &&
-        championsLeft.indexOf(num) > -1 &&
-        championsRight.indexOf(num) > -1
+        championsLeft.indexOf(num) > -1 ||
+        championsRight.indexOf(num) > -1 ||
+        arrayLeftOthers.indexOf(num) > -1
       ) {
         num = Math.round(Math.random() * (155 - 0) + 0);
       }
@@ -78,9 +77,10 @@ function App() {
       let num = Math.round(Math.random() * (155 - 0) + 0);
 
       while (
-        arrayRightOthers.indexOf(num) > -1 &&
-        championsLeft.indexOf(num) > -1 &&
-        championsRight.indexOf(num) > -1
+        championsLeft.indexOf(num) > -1 ||
+        championsRight.indexOf(num) > -1 ||
+        arrayLeftOthers.indexOf(num) > -1 ||
+        arrayRightOthers.indexOf(num) > -1
       ) {
         num = Math.round(Math.random() * (155 - 0) + 0);
       }
