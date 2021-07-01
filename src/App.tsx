@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        `http://ddragon.leagueoflegends.com/cdn/11.13.1/data/en_US/champion.json`
+        `https://ddragon.leagueoflegends.com/cdn/11.13.1/data/en_US/champion.json`
       )
       .then((res) => {
         var data = res.data.data;
