@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f8f8;
+  color: #29292e;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 16px "Roboto", sans-serif;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app h1 {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.app .buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 25px 0;
+}
+
+.app .buttons button {
+  padding: 10px 30px;
+  border-radius: 4px;
+  margin-left: 10px;
+  background: crimson;
+  color: #fff;
+  border: 0;
+}
+.app .buttons button:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.app .box-times {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.app .box-times .box {
+  background: #f2f2f2;
+  width: 100%;
+}
+
+.app .box-times .box .champion,
+.box-times-others .box .champion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.app .box-times .box .champion img,
+.box-times-others .box .champion img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.app .box-times .box .champion span {
+  font: 16px;
+  font-weight: 800;
+}
+
+.box-times-others {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-times-others .box {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
