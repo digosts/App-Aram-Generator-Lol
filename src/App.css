@@ -2,18 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-  background: #f8f8f8;
-  color: #29292e;
+  background: #111111;
+  color: #fff;
 }
 
 body,
 input,
 button,
 textarea {
-  font: 400 16px "Roboto", sans-serif;
+  font: 400 16px;
 }
 
 .app {
@@ -22,6 +23,7 @@ textarea {
 }
 
 .app h1 {
+  color: #0bc6e3;
   text-align: center;
   padding: 50px 0;
 }
@@ -37,8 +39,9 @@ textarea {
   padding: 10px 30px;
   border-radius: 4px;
   margin-left: 10px;
-  background: crimson;
-  color: #fff;
+  background: #0bc6e3;
+  font-weight: 800;
+  color: #333;
   border: 0;
 }
 .app .buttons button:hover {
@@ -46,7 +49,7 @@ textarea {
   cursor: pointer;
 }
 .app .buttons button:disabled {
-  opacity: 0.85;
+  opacity: 0.55;
   cursor: no-drop;
 }
 
@@ -58,7 +61,6 @@ textarea {
 }
 
 .app .box-times .box {
-  background: #f2f2f2;
   width: 100%;
 }
 
@@ -66,7 +68,7 @@ textarea {
 .box-times-others .box .champion {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  padding: 4px 5px;
 }
 
 .app .box-times .box .champion img,
@@ -75,11 +77,13 @@ textarea {
   height: 70px;
   border-radius: 50%;
   margin-right: 15px;
+  border: 1px solid #ccc;
 }
 
 .app .box-times .box .champion span {
-  font: 16px;
+  font-size: 1rem;
   font-weight: 800;
+  color: #0bc6e3;
 }
 
 .box-times-others {
