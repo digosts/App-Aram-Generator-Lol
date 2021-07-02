@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #111111;
+  background: #0f1923;
   color: #fff;
 }
 
@@ -22,10 +22,22 @@ textarea {
   margin: 0 auto;
 }
 
-.app h1 {
-  color: #0bc6e3;
+.app .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.app .header h1 {
+  color: #f12c4c;
   text-align: center;
   padding: 50px 0;
+}
+
+.app .header img {
+  max-width: 200px;
+  height: auto;
 }
 
 .app .buttons {
@@ -39,9 +51,9 @@ textarea {
   padding: 10px 30px;
   border-radius: 4px;
   margin-left: 10px;
-  background: #0bc6e3;
+  background: #f12c4c;
   font-weight: 800;
-  color: #333;
+  color: #feeaed;
   border: 0;
 }
 .app .buttons button:hover {
@@ -61,7 +73,9 @@ textarea {
 }
 
 .app .box-times .box {
-  width: 100%;
+  width: 49%;
+  background: #1a242d;
+  padding: 10px;
 }
 
 .app .box-times .box .champion,
@@ -77,13 +91,13 @@ textarea {
   height: 70px;
   border-radius: 50%;
   margin-right: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #feeaed;
 }
 
 .app .box-times .box .champion span {
   font-size: 1rem;
   font-weight: 800;
-  color: #0bc6e3;
+  color: #f12c4c;
 }
 
 .box-times-others {
@@ -92,8 +106,10 @@ textarea {
 }
 
 .box-times-others .box {
-  width: 40%;
+  width: 48.5%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  background: #1a242d;
+  padding: 5px;
 }

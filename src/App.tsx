@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
+import logoRiot from "./riot-pairedlogo-red-rgb.png";
 
 function App() {
   const [champions, setChampions] = useState<any>([]);
@@ -110,7 +111,10 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Sorteio de Aram - Exodia</h1>
+      <div className="header">
+        <img src={logoRiot} alt="aram exodia" />
+        <h1>Sorteio de Aram - Exodia</h1>
+      </div>
 
       <hr />
 
@@ -172,7 +176,6 @@ function App() {
             );
           })}
         </div>
-        <br />
       </div>
     </div>
   );
